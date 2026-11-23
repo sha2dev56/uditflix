@@ -8,18 +8,25 @@
 
 import '../models/contenido.dart';
 
+// Vídeos públicos de demostración. Ambas URLs responden HTTP 200 y sirven
+// MP4, por lo que pueden reproducirse directamente con video_player.
+const String urlVideoDemostracion =
+    'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4';
+const String urlVideoDemostracionAlternativa =
+    'https://www.w3schools.com/html/mov_bbb.mp4';
 
 // Lista de contenidos que aparecerán en nuestra aplicación.
 // Cada elemento de lista es un objeto de tipo Contenido
 
 const List<Contenido> contenidos = [
-    
+
     Contenido(
         id: 1,
         titulo: 'Introducción a Flutter',
         descripcion: 'Aprende a crear aplicaciones multiplataforma',
         tipo: 'Video',
         duracion: '15 minutos',
+        urlVideo: urlVideoDemostracion,
     ),
     Contenido(
         id: 2,
@@ -27,6 +34,7 @@ const List<Contenido> contenidos = [
         descripcion: 'Introducción a la programación orientada a obejtos',
         tipo: 'Video',
         duracion: '25 minutos',
+        urlVideo: urlVideoDemostracionAlternativa,
     ),
 
         Contenido(
@@ -43,6 +51,6 @@ const List<Contenido> contenidos = [
         descripcion: 'Descubre los fundamentos de la lógica de videojuegos',
         tipo: 'Juego',
         duracion: '20 minutos',
-    ),   
+    ),
 
 ];

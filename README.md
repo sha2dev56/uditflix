@@ -1,17 +1,28 @@
-# uditflix
+# UDITflix
 
-A new Flutter project.
+Plataforma de contenido educativo y entretenimiento creada con Flutter.
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+- **Catálogo**: contenido de demostración (vídeos, cómics y juegos) con filtros por tipo.
+- **Ficha de contenido**: sinopsis, duración y accesos directos al reproductor o al arcade.
+- **Reproductor de vídeo**: controles de play/pausa, salto de 10 segundos, barra de progreso y pantalla completa.
+- **UDIT Arcade**: Flappy Bird sencillo dibujado con Flutter. Se controla tocando la pantalla o con Espacio / Flecha arriba / W, y guarda el récord durante la sesión.
 
-A few resources to get you started if this is your first Flutter project:
+## Diseño
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Interfaz inspirada en las plataformas de streaming (estilo Netflix): fondo casi negro, acento rojo, cartelera destacada, filas de contenido en carrusel y fichas de detalle envolventes. Todos los estilos están centralizados en `lib/theme/app_theme.dart`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Ejecutar
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Pruebas
+
+```bash
+flutter analyze
+flutter test
+```

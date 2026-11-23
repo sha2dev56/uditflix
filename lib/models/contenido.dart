@@ -13,6 +13,9 @@ class Contenido {
     // Tipo de contenido: vído, cómic o juego
     final String tipo;
     final String duracion;
+    // URL del vídeo de demostración. Es opcional porque no todos los
+    // contenidos son reproducibles (por ejemplo, los cómics).
+    final String? urlVideo;
 
     // Constructor: permite crear nuevos Contenido
 
@@ -22,6 +25,6 @@ class Contenido {
         required this.descripcion,
         required this.tipo,
         required this.duracion,
-
+        this.urlVideo,
     });
 }
